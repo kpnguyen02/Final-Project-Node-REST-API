@@ -1,0 +1,30 @@
+GET http://localhost:3000/states
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/states/KS/funfact
+Content-Type: application/json
+
+{
+    "funfacts": ["Fun fact 1", "Fun fact 2", "Fun fact 3"]
+}
+
+###
+
+PATCH http://localhost:3000/states/KS/funfact
+Content-Type: application/json
+
+{
+    "index": 1,
+    "funfact": "Updated fun fact"
+}
+
+###
+
+DELETE http://localhost:3000/states/KS/funfact
+Content-Type: application/json
+
+{
+    "index": 2
+}
